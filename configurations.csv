@@ -1,0 +1,4 @@
+config,description,dc_60kw_units,dc_120kw_units,ac_7kw_units,upstream_band,upstream_cost_lakh,label,source
+A,Lean: 1 x 60 kW DC + 2 x 7.4 kW AC,1,0,2,<=100 kW,14.80,FACT,MHI PM E-DRIVE Table 3
+B,Balanced: 2 x 60 kW DC + 2 x 7.4 kW AC,2,0,2,<=150 kW,19.00,FACT,MHI PM E-DRIVE Table 3
+C,Fleet hub: 2 x 120 kW DC + 2 x 7.4 kW AC,0,2,2,>150 kW,24.00,FACT,MHI PM E-DRIVE Table 3

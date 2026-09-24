@@ -1,0 +1,12 @@
+city,station,operator,area,dc_power_kw,dc_connectors,dc_price_rs_kwh,ac_price_rs_kwh,status_seen,hours,label,source,date_seen
+Delhi,GMR Aerocity Parking (CCS),Statiq / GMR,Aerocity,60,6,19.99,,1 of 3 chargers faulted,24h,OBSERVED (web listing),https://www.statiq.in/gmr-green-ccs-charging-station-ev-charging-station-id-1821,2026-09-23
+Delhi,Statiq Mahipalpur Hub,Statiq,Mahipalpur (airport),25-120,,21.99-22.99,19.99-22.99,operational; some connectors faulted; 14137 reviews,24h,OBSERVED (web listing),https://www.statiq.in/Statiq-Mahipalpur-Hub-Station-ev-charging-station-id-10903,2026-09-23
+Delhi,GLIDA DLF Avenue,Glida (listed on Statiq),Saket (South Delhi),60,8,21.99,18.99,all connectors faulted,24h,OBSERVED (web listing),https://www.statiq.in/GLIDA-DLF-Avenue-ev-charging-station-id-4935,2026-09-23
+Delhi,Tata Power Worldmark 2,Tata Power,Aerocity,,2,,,open; price not listed,24h,OBSERVED (web listing),https://www.statiq.in/Tata-Power--Worldmark-2-Basement-Parking--ev-charging-station-id-4596,2026-09-23
+Delhi,Tata Power EZ Charge (network),Tata Power,Delhi NCR,30-60,,15-22,,,,REPORTED (secondary),https://thatsmyev.com/blogs/ev-charging-stations-delhi-ncr-2026,2026-08-06
+Delhi,Jio-bp pulse (network),Jio-bp,National headline,,,18.25-20.25,,,,REPORTED (operator site; state rates vary),https://www.jiobp.com/ev-saver,2026-09-23
+Hyderabad,Divyasree Trinity,Statiq,HITEC City / Madhapur,120,2,24.99,22.99,1 of 2 DC unavailable,24h,OBSERVED (web listing),https://www.statiq.in/Divyasree-Trinity-Charging-Station-ev-charging-station-id-6631,2026-09-23
+Hyderabad,DivyaSree Solitaire,Statiq,Inorbit Mall Rd (HITEC City),120,2,21.99,,currently unavailable,24h,OBSERVED (web listing),https://www.statiq.in/Statiq-DivyaSree-Solitaire-Station-ev-charging-station-id-2239,2026-09-23
+Hyderabad,Spider SLN Gachibowli,Statiq,Gachibowli,120,2,21.99,,both chargers faulted,24h,OBSERVED (web listing),https://www.statiq.in/spider-sln-gachibowli-ev-charging-station-id-16176,2026-09-23
+Hyderabad,TSIIC IOCL Bunk,Statiq (TGIIC / IOCL site),Gachibowli,60,2,13.00,,open; reviews report one gun not working,24h,OBSERVED (web listing),https://www.statiq.in/TSIIC-IOCL-Bunk-EV-Charging-station-id-6832,2026-09-23
+Hyderabad,TGREDCO public network (200 stations),Govt-built; private CPO operates,Greater Hyderabad / Cyberabad / Malkajgiri,,,13.00 + GST,,tender closed 22 Sep 2026; 10-year fixed price; 95% uptime required,,REPORTED (press),https://newsmeter.in/top-stories/telangana-to-get-369-new-ev-charging-stations-tariff-fixed-at-13-per-unit-775007,2026-09-06

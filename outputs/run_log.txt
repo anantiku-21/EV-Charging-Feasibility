@@ -1,0 +1,117 @@
+=== Configuration comparison (base case) ===
+     city config                              description  capex_lakh  yr1_utilisation_pct  npv_lakh irr_pct
+    Delhi      A       Lean: 1 x 60 kW DC + 2 x 7.4 kW AC        31.2                  7.3     -25.4    None
+    Delhi      B   Balanced: 2 x 60 kW DC + 2 x 7.4 kW AC        47.0                  4.0     -45.3    None
+    Delhi      C Fleet hub: 2 x 120 kW DC + 2 x 7.4 kW AC        64.1                  2.1     -66.4    None
+Hyderabad      A       Lean: 1 x 60 kW DC + 2 x 7.4 kW AC        31.2                  7.2     -34.8    None
+Hyderabad      B   Balanced: 2 x 60 kW DC + 2 x 7.4 kW AC        47.0                  4.0     -54.8    None
+Hyderabad      C Fleet hub: 2 x 120 kW DC + 2 x 7.4 kW AC        64.1                  2.1     -95.9    None
+
+Best configuration by NPV: {'Delhi': 'A', 'Hyderabad': 'A'}
+
+=== Delhi | config A | base case (Rs lakh) ===
+CAPEX: {'chargers': 9.3, 'upstream_grid': 14.8, 'civil': 3.0, 'other': 1.25, 'contingency': 2.84, 'total': 31.18} | working capital: 0.59
+ year  kwh_per_day  sessions_per_day  utilisation  revenue  electricity  gross_profit  opex_excl_electricity  ebitda  tax  net_cash_flow  cumulative_cash_flow
+    1         91.3               4.6          7.3      6.2          1.9           4.3                    5.2    -0.9  0.0           -0.9                 -32.6
+    2        139.6               7.0         11.1      9.7          3.0           6.7                    6.0     0.7  0.0            0.7                 -31.9
+    3        149.4               7.5         11.9     10.6          3.3           7.3                    6.3     1.0  0.0            1.0                 -30.9
+    4        159.8               8.0         12.7     11.5          3.6           7.9                    6.7     1.2  0.0            1.2                 -29.7
+    5        171.0               8.5         13.6     12.6          4.0           8.6                    7.1     1.5  0.0            1.5                 -28.3
+    6        183.0               9.1         14.6     13.7          4.4           9.4                    7.6     1.8  0.0            1.8                 -26.5
+    7        195.8               9.8         15.6     15.0          4.8          10.2                    8.1     2.1  0.0            2.1                 -24.4
+    8        209.5              10.5         16.7     16.4          5.3          11.0                    8.6     2.5  0.0            2.5                 -21.9
+    9        224.1              11.2         17.8     17.9          5.9          12.0                    9.1     2.9  0.0            2.9                 -19.0
+   10        239.8              12.0         19.1     19.5          6.5          13.0                    9.7     3.4  0.0            3.9                 -15.0
+Discount rate 14.10% | NPV Rs -25.4 lakh | IRR None% | payback None
+
+=== Hyderabad | config A | base case (Rs lakh) ===
+CAPEX: {'chargers': 9.3, 'upstream_grid': 14.8, 'civil': 3.0, 'other': 1.25, 'contingency': 2.84, 'total': 31.18} | working capital: 0.59
+ year  kwh_per_day  sessions_per_day  utilisation  revenue  electricity  gross_profit  opex_excl_electricity  ebitda  tax  net_cash_flow  cumulative_cash_flow
+    1         90.2               4.5          7.2      5.3          2.1           3.2                    5.0    -1.8  0.0           -1.8                 -33.6
+    2        137.9               6.9         11.0      8.2          3.2           5.0                    5.7    -0.7  0.0           -0.7                 -34.3
+    3        147.6               7.4         11.7      9.0          3.6           5.4                    6.1    -0.6  0.0           -0.6                 -35.0
+    4        157.9               7.9         12.6      9.8          3.9           5.9                    6.4    -0.6  0.0           -0.6                 -35.5
+    5        169.0               8.4         13.4     10.7          4.3           6.4                    6.8    -0.4  0.0           -0.4                 -36.0
+    6        180.8               9.0         14.4     11.7          4.7           6.9                    7.2    -0.3  0.0           -0.3                 -36.3
+    7        193.5               9.7         15.4     12.7          5.2           7.5                    7.7    -0.2  0.0           -0.2                 -36.5
+    8        207.0              10.4         16.5     13.9          5.8           8.1                    8.1    -0.0  0.0           -0.0                 -36.5
+    9        221.5              11.1         17.6     15.2          6.4           8.8                    8.6     0.2  0.0            0.2                 -36.3
+   10        237.0              11.9         18.9     16.5          7.0           9.5                    9.2     0.4  0.0            0.9                 -35.4
+Discount rate 14.10% | NPV Rs -34.8 lakh | IRR None% | payback None
+
+=== Unit economics (Rs) ===
+     city  year  revenue_per_kwh  electricity_per_kwh  contribution_per_kwh  other_opex_per_kwh  ebitda_per_kwh  revenue_per_session  contribution_per_session
+    Delhi     1            18.64                 5.67                  9.89               12.48           -2.59               372.80                    197.89
+    Delhi     5            20.18                 6.38                 10.47                8.10            2.36               403.53                    209.31
+Hyderabad     1            16.00                 6.23                  7.13               12.63           -5.50               320.00                    142.61
+Hyderabad     5            17.32                 6.99                  7.47                8.20           -0.73               346.38                    149.46
+
+=== Scenarios ===
+                                             0      1           2             3          4           5
+city                                     Delhi  Delhi       Delhi     Hyderabad  Hyderabad   Hyderabad
+config                                       A      A           A             A          A           A
+scenario                          conservative   base  aggressive  conservative       base  aggressive
+yr1_kwh_day                               47.0   91.3       167.0          46.4       90.2       165.0
+yr1_sessions_day                           2.3    4.6         8.3           2.3        4.5         8.3
+yr1_utilisation_pct                        3.7    7.3        13.3           3.7        7.2        13.1
+yr5_utilisation_pct                        6.2   13.6        26.1           6.2       13.4        25.8
+yr1_revenue_lakh                           2.9    6.2        11.6           2.2        5.3        11.2
+yr1_ebitda_lakh                           -5.7   -0.9         4.4          -6.3       -1.8         3.4
+yr5_revenue_lakh                           4.8   12.6        25.7           3.7       10.7        24.9
+yr5_ebitda_lakh                           -6.7    1.5        12.8          -7.8       -0.4        10.8
+yr5_ebitda_margin_pct                   -138.8   11.7        49.9        -212.5       -4.2        43.3
+capex_lakh                                35.7   31.2        28.2          35.7       31.2        28.2
+npv_lakh                                 -70.8  -25.4        22.6         -76.1      -34.8        14.9
+irr_pct                                    NaN    NaN        27.2           NaN        NaN        23.1
+payback_years                              NaN    NaN         4.2           NaN        NaN         4.8
+breakeven_npv_kwh_day                      NaN  320.8       200.7           NaN      450.3       228.4
+breakeven_npv_sessions_day                 NaN   16.0        10.0           NaN       22.5        11.4
+breakeven_npv_utilisation_pct              NaN   25.5        16.0           NaN       35.8        18.2
+breakeven_npv_revenue_lakh_yr1             NaN   21.8        14.0           NaN       26.3        15.5
+breakeven_ebitda_utilisation_pct          21.3    9.2         5.2           NaN       12.7         5.9
+breakeven_ebitda_sessions_day             13.4    5.8         3.3           NaN        8.0         3.7
+
+=== Sensitivity (NPV, Rs lakh) ===
+     city                                             input  base_npv_lakh  npv_bad_lakh  npv_good_lakh  swing_lakh
+    Delhi                               Staff 2 FTE / 0 FTE          -25.4         -40.4          -11.7        28.7
+    Delhi                      Demand (capture) -30% / +30%          -25.4         -35.0          -16.2        18.7
+    Delhi Grid work: new connection / host's spare capacity          -25.4         -25.4           -8.8        16.6
+    Delhi                                 CAPEX +20% / -20%          -25.4         -32.1          -18.7        13.5
+    Delhi                        Charging price -10% / +10%          -25.4         -30.6          -20.2        10.3
+    Delhi                      Electricity cost +20% / -20%          -25.4         -29.3          -21.4         7.9
+    Delhi                      Host revenue share 20% / 10%          -25.4         -28.5          -22.3         6.2
+    Delhi                           Discount rate 16% / 12%          -25.4         -26.1          -24.5         1.6
+Hyderabad                               Staff 2 FTE / 0 FTE          -34.8         -49.9          -19.8        30.1
+Hyderabad Grid work: new connection / host's spare capacity          -34.8         -34.8          -18.1        16.8
+Hyderabad                      Demand (capture) -30% / +30%          -34.8         -41.6          -28.1        13.5
+Hyderabad                                 CAPEX +20% / -20%          -34.8         -41.6          -28.1        13.5
+Hyderabad                        Charging price -10% / +10%          -34.8         -39.2          -30.5         8.8
+Hyderabad                      Electricity cost +20% / -20%          -34.8         -39.1          -30.6         8.5
+Hyderabad                      Host revenue share 20% / 10%          -34.8         -37.5          -32.2         5.3
+Hyderabad                           Discount rate 16% / 12%          -34.8         -34.8          -34.9        -0.2
+
+=== What would it take? (base case + controllable levers) ===
+     city                                       step  capex_lakh  npv_lakh  irr_pct  payback_years
+    Delhi                                  Base case        31.2     -25.4      NaN            NaN
+    Delhi       + host site with spare grid capacity        14.9      -8.8      1.4            9.5
+    Delhi              + unmanned (remote-monitored)        14.9       2.9     18.0            5.1
+    Delhi                    + host share cut to 10%        14.9       5.3     20.9            4.7
+    Delhi Break-even utilisation with all levers (%)         NaN      10.4      NaN            NaN
+Hyderabad                                  Base case        31.2     -34.8      NaN            NaN
+Hyderabad       + host site with spare grid capacity        14.9     -18.1      NaN            NaN
+Hyderabad              + unmanned (remote-monitored)        14.9      -4.2      7.8            7.4
+Hyderabad                    + host share cut to 10%        14.9      -2.2     11.0            6.5
+Hyderabad Break-even utilisation with all levers (%)         NaN      14.3      NaN            NaN
+
+=== All-levers station across scenarios ===
+     city     scenario  npv_lakh  irr_pct  payback_years
+    Delhi conservative     -19.1      NaN            NaN
+    Delhi         base       5.3     20.9            4.7
+    Delhi   aggressive      41.3     54.0            2.3
+Hyderabad conservative     -24.9      NaN            NaN
+Hyderabad         base      -2.2     11.0            6.5
+Hyderabad   aggressive      33.6     47.5            2.6
+
+Hyderabad base case at Rs 13 price: NPV Rs -43.1 lakh
+
+Charts saved in outputs/charts/

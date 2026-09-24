@@ -1,0 +1,4 @@
+city,price_point,price,margin_if_price_excl_gst,margin_if_price_incl_gst
+Delhi,private median,21.99,16.49,13.14
+Hyderabad,private median,21.99,15.99,12.64
+Hyderabad,govt Rs 13,13.0,7.0,5.02

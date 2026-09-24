@@ -1,0 +1,7 @@
+city,config,description,capex_lakh,yr1_utilisation_pct,npv_lakh,irr_pct
+Delhi,A,Lean: 1 x 60 kW DC + 2 x 7.4 kW AC,31.18,7.27,-25.39,
+Delhi,B,Balanced: 2 x 60 kW DC + 2 x 7.4 kW AC,46.96,4.03,-45.34,
+Delhi,C,Fleet hub: 2 x 120 kW DC + 2 x 7.4 kW AC,64.14,2.13,-66.39,
+Hyderabad,A,Lean: 1 x 60 kW DC + 2 x 7.4 kW AC,31.18,7.18,-34.85,
+Hyderabad,B,Balanced: 2 x 60 kW DC + 2 x 7.4 kW AC,46.96,3.99,-54.79,
+Hyderabad,C,Fleet hub: 2 x 120 kW DC + 2 x 7.4 kW AC,64.14,2.11,-95.93,

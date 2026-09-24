@@ -1,0 +1,6 @@
+city,state,e4w_sales_fy26,e4w_months_covered,e4w_penetration_pct,pcs_total,pcs_fast,ev_energy_charge_rs_kwh,ev_fixed_charge,label,notes
+Hyderabad,Telangana,19810,11,11.6,1062,548,6.0,to verify (TGERC FY26-27 order),FACT (sales/PCS) + TO VERIFY (tariff),"Sales Apr25-Feb26 from Telangana transport portal (not on VAHAN 4); +Rs1/kWh peak ToD 6-10am & 6-10pm from FY26-27"
+Bengaluru,Karnataka,24201,12,,6096,751,4.5,Rs70/kW/month LT (Rs200/kVA HT),FACT (sales/PCS) + SECONDARY (tariff),"Penetration not in published top list; tariff from secondary summary of KERC 2025 order - verify"
+Delhi,Delhi,16986,12,8.4,1957,399,4.5,none reported,FACT (sales/PCS) + SECONDARY (tariff),"City = state, so no proxy error; HT supply billed Rs4.00/kVAh"
+Pune,Maharashtra,34066,12,,4166,1205,,to verify (MERC MYT order),FACT (state-level only),"State figure includes Mumbai, Nagpur etc; Pune share not isolated"
+Ranchi,Jharkhand,,,,353,129,,to verify (JSERC order),FACT (PCS) / DATA GAP (sales),"FY26 e-4W not published; cumulative e-4W only 1475 to Aug 2024 per VAHAN (CEED India)"

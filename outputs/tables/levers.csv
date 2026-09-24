@@ -1,0 +1,11 @@
+city,step,capex_lakh,npv_lakh,irr_pct,payback_years
+Delhi,Base case,31.18,-25.39,,
+Delhi,+ host site with spare grid capacity,14.9,-8.76,1.4,9.5
+Delhi,+ unmanned (remote-monitored),14.9,2.94,18.0,5.1
+Delhi,+ host share cut to 10%,14.9,5.27,20.9,4.7
+Delhi,Break-even utilisation with all levers (%),,10.38,,
+Hyderabad,Base case,31.18,-34.85,,
+Hyderabad,+ host site with spare grid capacity,14.9,-18.06,,
+Hyderabad,+ unmanned (remote-monitored),14.9,-4.17,7.8,7.4
+Hyderabad,+ host share cut to 10%,14.9,-2.17,11.0,6.5
+Hyderabad,Break-even utilisation with all levers (%),,14.33,,

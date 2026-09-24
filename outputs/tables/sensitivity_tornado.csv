@@ -1,0 +1,17 @@
+city,input,base_npv_lakh,npv_bad_lakh,npv_good_lakh,swing_lakh
+Delhi,Staff 2 FTE / 0 FTE,-25.39,-40.43,-11.7,28.73
+Delhi,Demand (capture) -30% / +30%,-25.39,-34.95,-16.23,18.72
+Delhi,Grid work: new connection / host's spare capacity,-25.39,-25.39,-8.76,16.64
+Delhi,CAPEX +20% / -20%,-25.39,-32.13,-18.66,13.46
+Delhi,Charging price -10% / +10%,-25.39,-30.55,-20.23,10.32
+Delhi,Electricity cost +20% / -20%,-25.39,-29.34,-21.45,7.9
+Delhi,Host revenue share 20% / 10%,-25.39,-28.51,-22.28,6.23
+Delhi,Discount rate 16% / 12%,-25.39,-26.09,-24.5,1.6
+Hyderabad,Staff 2 FTE / 0 FTE,-34.85,-49.88,-19.82,30.07
+Hyderabad,Grid work: new connection / host's spare capacity,-34.85,-34.85,-18.06,16.79
+Hyderabad,Demand (capture) -30% / +30%,-34.85,-41.59,-28.1,13.49
+Hyderabad,CAPEX +20% / -20%,-34.85,-41.58,-28.12,13.46
+Hyderabad,Charging price -10% / +10%,-34.85,-39.23,-30.47,8.75
+Hyderabad,Electricity cost +20% / -20%,-34.85,-39.11,-30.59,8.52
+Hyderabad,Host revenue share 20% / 10%,-34.85,-37.49,-32.21,5.28
+Hyderabad,Discount rate 16% / 12%,-34.85,-34.77,-34.94,-0.18

@@ -1,0 +1,7 @@
+city,config,scenario,yr1_kwh_day,yr1_sessions_day,yr1_utilisation_pct,yr5_utilisation_pct,yr1_revenue_lakh,yr1_ebitda_lakh,yr5_revenue_lakh,yr5_ebitda_lakh,yr5_ebitda_margin_pct,capex_lakh,npv_lakh,irr_pct,payback_years,breakeven_npv_kwh_day,breakeven_npv_sessions_day,breakeven_npv_utilisation_pct,breakeven_npv_revenue_lakh_yr1,breakeven_ebitda_utilisation_pct,breakeven_ebitda_sessions_day
+Delhi,A,conservative,46.96,2.35,3.74,6.23,2.9,-5.66,4.84,-6.72,-138.85,35.66,-70.82,,,,,,,21.3,13.39
+Delhi,A,base,91.32,4.57,7.27,13.61,6.21,-0.86,12.59,1.47,11.71,31.18,-25.39,,,320.82,16.04,25.53,21.83,9.17,5.76
+Delhi,A,aggressive,166.98,8.35,13.29,26.14,11.62,4.41,25.72,12.84,49.94,28.2,22.55,27.2,4.2,200.66,10.03,15.97,13.96,5.18,3.25
+Hyderabad,A,conservative,46.41,2.32,3.69,6.16,2.2,-6.3,3.67,-7.8,-212.54,35.66,-76.06,,,,,,,,
+Hyderabad,A,base,90.25,4.51,7.18,13.45,5.27,-1.81,10.68,-0.45,-4.19,31.18,-34.85,,,450.26,22.51,35.83,26.3,12.69,7.97
+Hyderabad,A,aggressive,165.02,8.25,13.13,25.83,11.23,3.44,24.86,10.75,43.25,28.2,14.88,23.1,4.8,228.41,11.42,18.18,15.54,5.93,3.73
