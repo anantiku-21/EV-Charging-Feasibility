@@ -1,8 +1,8 @@
 # EV Charging Station Feasibility & Financial Analysis — Delhi vs Hyderabad
 
-> **Verdict:** Don't build the station as designed in either city. **Delhi works only as a conditional pilot:** a single 60 kW charger at a host site with spare grid capacity, run unmanned, with a host revenue share of 10% or less (NPV **+₹5.3 lakh**, IRR **20.9%**, payback **4.7 years**). It still fails the conservative scenario. **Hyderabad is financially unattractive now** (NPV **−₹2.2 lakh** even with every lever pulled), because a ₹13/kWh government charging network is capping prices.
+> Key Finding: Don't build the station as designed in either city. Delhi is viable only as a conditional pilot: a single 60 kW charger at a host site with spare grid capacity, operated unmanned, with a host revenue share of 10% or less (NPV +₹5.3 lakh, IRR 20.9%, payback 4.7 years). It still fails under the conservative scenario. Hyderabad remains financially unattractive under the modeled assumptions, with NPV of −₹2.2 lakh even after applying all modeled lever.
 
-*A portfolio feasibility study for a hypothetical charge-point operator (CPO). There is no real client. Every external number is sourced and labelled in [`docs/source_register.md`](docs/source_register.md).*
+*A portfolio feasibility study for a hypothetical charge-point operator (CPO). There is no real client. External figures are sourced and documented in docs/source_register.md..*
 
 ---
 
